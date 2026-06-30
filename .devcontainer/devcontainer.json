@@ -1,0 +1,9 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers-extra/features/uv-tool:1": {}
+  },
+  "customizations": {
+    "extensions": ["ms-python.debugpy", "charliermarsh.ruff", "astral-sh.ty"]
+  }
+}
