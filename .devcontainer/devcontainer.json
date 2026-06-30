@@ -1,7 +1,14 @@
 {
+  "$schema": "https://raw.githubusercontent.com/devcontainers/spec/refs/heads/main/schemas/devContainer.schema.json",
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "customizations": {
-    "extensions": ["ms-python.python", "charliermarsh.ruff", "astral-sh.ty"]
+    "vscode": {
+      "extensions": ["ms-python.python", "charliermarsh.ruff", "astral-sh.ty"],
+      "settings": {
+        "git.autofetch": true,
+        "files.autoSave": "onFocusChange"
+      }
+    }
   },
   "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && uv sync",
   "postStartCommand": ". .venv/bin/activate"
