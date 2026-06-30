@@ -1,7 +1,8 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "customizations": {
-    "extensions": ["ms-python.debugpy", "charliermarsh.ruff", "astral-sh.ty"]
+    "extensions": ["ms-python.python", "charliermarsh.ruff", "astral-sh.ty"]
   },
-  "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh"
+  "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && uv sync",
+  "postStartCommand": ". .venv/bin/activate"
 }
