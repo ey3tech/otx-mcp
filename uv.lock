@@ -653,7 +653,7 @@ dev = [
 [[package]]
 name = "otx-py"
 version = "0.1.0"
-source = { git = "https://github.com/ey3tech/otx-py#1d6d79ed53241408d8e17e38526514f4f166e769" }
+source = { git = "https://github.com/ey3tech/otx-py#b75e6891b19e33f0cee7af5699f24f1253101265" }
 dependencies = [
     { name = "httpx" },
     { name = "msgspec" },
