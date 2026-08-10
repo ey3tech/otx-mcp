@@ -1,10 +1,7 @@
-from turtle import pu
-from typing import Any
 from fastmcp import FastMCP
 from otx_py import OTXClient
 from dotenv import load_dotenv
 import os
-from msgspec import json
 from msgspec import to_builtins
 
 load_dotenv()
