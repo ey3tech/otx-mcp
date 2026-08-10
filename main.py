@@ -14,13 +14,13 @@ otx = OTXClient(os.environ["OTX_KEY"])
 
 
 @app.tool(description="Get the latest pulses from OTX")
-def pulses() -> dict[str, dict]:
-    pulses = otx.pulses(5)
+def get_pulses() -> dict[str, dict]:
+    pulses = otx.get_pulses(5)
     return {"pulses": to_builtins(pulses)}
 
 @app.tool(description="Get different indicator types")
 def get_indicator_types() -> dict[str, dict]:
-    types = otx.indicator_types()
+    types = otx.get_indicator_types()
     return {"indicator_types": to_builtins(types)}
 
 @app.tool(description="Search for users")
@@ -40,12 +40,12 @@ def get_user(username: str, detail: bool) -> dict[str, dict]:
 
 @app.tool(description="Get a specific pulse from OTX by its ID")
 def get_pulse(pulse_id: str) -> dict[str, dict]:
-    pulse = otx.pulse_id(pulse_id)
+    pulse = otx.get_pulse_by_id(pulse_id)
     return {"pulses": to_builtins(pulse)}
 
 @app.tool(description="Get indicators")
 def get_pulse_indicators(pulse_id: str, limit: int=25) -> dict[str, dict]:
-    pulse_indicator = otx.pulse_id_indicators(pulse_id, limit)
+    pulse_indicator = otx.get_pulse_indicators(pulse_id, limit)
     return {"indicators": to_builtins(pulse_indicator)}
 
 if __name__ == "__main__":
