@@ -15,7 +15,14 @@ dependencies = [
 dev = [
     "ruff>=0.15.20",
     "ty>=0.0.55",
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
 ]
 
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["."]
 [tool.uv.sources]
 otx-py = { git = "https://github.com/ey3tech/otx-py" }
