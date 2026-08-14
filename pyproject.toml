@@ -9,14 +9,14 @@ dependencies = [
     "fastmcp>=3.4.2",
     "msgspec>=0.21.1",
     "otx-py",
-    "pytest>=9.1.1",
-    "pytest-asyncio>=1.4.0",
 ]
 
 [dependency-groups]
 dev = [
     "ruff>=0.15.20",
     "ty>=0.0.55",
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
 ]
 
 

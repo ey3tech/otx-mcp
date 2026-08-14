@@ -637,12 +637,12 @@ dependencies = [
     { name = "fastmcp" },
     { name = "msgspec" },
     { name = "otx-py" },
-    { name = "pytest" },
-    { name = "pytest-asyncio" },
 ]
 
 [package.dev-dependencies]
 dev = [
+    { name = "pytest" },
+    { name = "pytest-asyncio" },
     { name = "ruff" },
     { name = "ty" },
 ]
@@ -653,12 +653,12 @@ requires-dist = [
     { name = "fastmcp", specifier = ">=3.4.2" },
     { name = "msgspec", specifier = ">=0.21.1" },
     { name = "otx-py", git = "https://github.com/ey3tech/otx-py" },
-    { name = "pytest", specifier = ">=9.1.1" },
-    { name = "pytest-asyncio", specifier = ">=1.4.0" },
 ]
 
 [package.metadata.requires-dev]
 dev = [
+    { name = "pytest", specifier = ">=9.1.1" },
+    { name = "pytest-asyncio", specifier = ">=1.4.0" },
     { name = "ruff", specifier = ">=0.15.20" },
     { name = "ty", specifier = ">=0.0.55" },
 ]
